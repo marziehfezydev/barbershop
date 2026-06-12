@@ -3,19 +3,20 @@ import MainHome from "./pages/MainHome"
 import AboutUs from "./pages/AboutUs"
 import Services from "./pages/Services"
 import OurBarber from "./pages/OurBarber"
-import "./index.css"
+import Testimonial from "./pages/Testimonial"
+
 
 
 function App() {
   return (
     <>
-      {/* navbar }*/}
+      {/* Navbar }*/}
       <Navbar />
 
-      {/* home hair cut */}
+      {/* Home Hair Cut */}
       <MainHome />
 
-      {/* about us */}
+      {/* About Us */}
       <AboutUs />
 
       { /* Services*/}
@@ -23,6 +24,9 @@ function App() {
 
       { /*Our Barber */}
       <OurBarber />
+
+      { /* Testimonial Slider */}
+      <Testimonial />
 
 
 

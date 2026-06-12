@@ -7,7 +7,7 @@ import { workingHours } from "../data/teamData";
 
 export default function TeamSection() {
     return (
-        <section className="bg-black py-20">
+        <section className="bg-black py-10">
             <div className="container mx-auto max-w-7xl px-4">
                 {/* Header */}
 
