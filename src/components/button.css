@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.btn {
+    @apply flex items-center gap-2 bg-[#EB1616] text-[#ffff] px-4 py-2 transition-all duration-300 rounded-none;
+}
+
+.btn_2 {
+    @apply flex items-center gap-2 bg-[#191C24] text-[#EB1616] text-sm px-4 py-1 transition-all duration-300 rounded-none cursor-pointer;
+}
+
+.active {
+    @apply text-[#EB1616] font-bold;
+}
+
+.link {
+    @apply text-[#6C7293] font-bold;
+}
+
+.link:hover {
+    @apply text-[#EB1616] transition-all duration-150;
+}
+
+.color {
+    @apply text-[#6C7293];
+}
