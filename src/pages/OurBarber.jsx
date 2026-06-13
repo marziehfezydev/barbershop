@@ -50,7 +50,7 @@ export default function TeamSection() {
                         {/* RIGHT CONTENT */}
                         <div className="bg-[#191C24] text-white px-10 py-12">
 
-                            <Button className="!bg-black">
+                            <Button className="!bg-black ">
                                 Working Hours
                             </Button>
 
@@ -73,8 +73,6 @@ export default function TeamSection() {
                                                     ? "text-[#6C7293]"
                                                     : "text-[#EB1616]"
                                             }
-
-
                                         />
                                     ))}
 

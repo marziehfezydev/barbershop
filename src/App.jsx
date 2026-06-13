@@ -4,7 +4,7 @@ import AboutUs from "./pages/AboutUs"
 import Services from "./pages/Services"
 import OurBarber from "./pages/OurBarber"
 import Testimonial from "./pages/Testimonial"
-
+import Footer from "./pages/Footer"
 
 
 function App() {
@@ -27,6 +27,9 @@ function App() {
 
       { /* Testimonial Slider */}
       <Testimonial />
+
+      { /* Footer */}
+      <Footer />
 
 
 

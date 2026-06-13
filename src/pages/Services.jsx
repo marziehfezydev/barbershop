@@ -9,7 +9,7 @@ import priceImg from '../assets/price.jpg'
 
 export default function Services() {
     return (
-        <section className="bg-black text-white pt-10">
+        <section className="bg-black text-white pt-10 ">
             <div className="mx-auto max-w-7xl">
 
                 {/* PART 1 */}
