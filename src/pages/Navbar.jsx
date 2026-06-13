@@ -4,7 +4,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="bg-[#191C24] fixed w-full top-0 left-0 z-50">
+        <header className="bg-[#191C24] fixed w-full top-0 left-0 z-50 anton-regular ">
             <nav className="container mx-auto flex items-center justify-between h-20 sm:h-24 px-5">
 
                 {/* Logo */}
@@ -42,7 +42,7 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="#"
-                                className="link"
+                                className="link "
                                 onClick={() => setIsOpen(false)}
                             >
                                 ABOUT
