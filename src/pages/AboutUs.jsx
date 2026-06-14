@@ -3,7 +3,7 @@ import about from "../assets/about.jpg"
 
 export default function AboutUs() {
     return (
-        <section className="bg-black py-16">
+        <section id="about" className="bg-black py-16 scroll-mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4">
                 {/* image and box */}
                 <div className="relative flex justify-center md:justify-start">
