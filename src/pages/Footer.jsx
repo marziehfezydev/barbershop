@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
     return (
-        <footer className="bg-[#191C24] text-[#6C7293] py-16 ">
+        <footer id="footer" className="bg-[#191C24] text-[#6C7293] py-16 scroll-mt-20">
             <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 {/* Contact */}
@@ -51,34 +51,30 @@ export default function Footer() {
 
                     <ul className="space-y-2">
                         <li>
-                            <a href="#" className="hover:text-[#EB1616] transition">
+                            <a href="#about" className="hover:text-[#EB1616] transition">
                                 About Us
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="hover:text-[#EB1616] transition">
+                            <a href="#footer" className="hover:text-[#EB1616] transition">
                                 Contact Us
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="hover:text-[#EB1616] transition">
+                            <a href="#services" className="hover:text-[#EB1616] transition">
                                 Our Services
                             </a>
                         </li>
 
                         <li>
-                            <a href="#" className="hover:text-[#EB1616] transition">
-                                Terms & Condition
+                            <a href="#team" className="hover:text-[#EB1616] transition">
+                                Our Team
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#" className="hover:text-[#EB1616] transition">
-                                Support
-                            </a>
-                        </li>
+
                     </ul>
                 </div>
 

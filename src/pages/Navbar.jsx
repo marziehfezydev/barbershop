@@ -65,13 +65,13 @@ export default function Navbar() {
                                 className="link"
                                 onClick={() => setIsOpen(false)}
                             >
-                                PAGES
+                                TEAM
                             </a>
                         </li>
 
                         <li>
                             <a
-                                href="#"
+                                href="#footer"
                                 className="link"
                                 onClick={() => setIsOpen(false)}
                             >
