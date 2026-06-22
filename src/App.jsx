@@ -1,48 +1,40 @@
-import Navbar from "./pages/Navbar"
-import MainHome from "./pages/MainHome"
-import AboutUs from "./pages/AboutUs"
-import Services from "./pages/Services"
-import OurBarber from "./pages/OurBarber"
-import Testimonial from "./pages/Testimonial"
-import Footer from "./pages/Footer"
-
-
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./pages/ScrollToTop";
+import Navbar from "./pages/Navbar";
+import Footer from "./pages/Footer";
+import MainHome from "./pages/MainHome";
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+import OurBarber from "./pages/OurBarber";
+import Testimonial from "./pages/Testimonial";
+import Appointment from "./pages/Appointment";
 
 function App() {
   return (
     <>
-      {/* Navbar }*/}
+      <ScrollToTop />
       <Navbar />
 
-      {/* Home Hair Cut */}
-      <MainHome />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <MainHome />
+              <AboutUs />
+              <Services />
+              <OurBarber />
+              <Testimonial />
+            </>
+          }
+        />
 
-      {/* About Us */}
-      <AboutUs />
+        <Route path="/appointment" element={<Appointment />} />
+      </Routes>
 
-      { /* Services*/}
-      <Services />
-
-      { /*Our Barber */}
-      <OurBarber />
-
-      { /* Testimonial Slider */}
-      <Testimonial />
-
-      { /* Footer */}
       <Footer />
-
-
-
-
-
-
-
-
     </>
-  )
+  );
 }
 
-
-
-export default App
+export default App;

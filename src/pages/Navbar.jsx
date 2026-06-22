@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+
+    const closeMenu = () => setIsOpen(false);
 
     return (
         <header className="bg-[#191C24] fixed w-full top-0 left-0 z-50 anton-regular">
@@ -29,11 +32,12 @@ export default function Navbar() {
                 >
                     <ul className="flex flex-col lg:flex-row items-center gap-8 text-xl">
 
+                        {/* HOME (scroll to top section in Home page) */}
                         <li>
                             <a
-                                href="#home"
+                                href="/#home"
+                                onClick={closeMenu}
                                 className="text-[#EB1616] font-bold"
-                                onClick={() => setIsOpen(false)}
                             >
                                 HOME
                             </a>
@@ -41,9 +45,9 @@ export default function Navbar() {
 
                         <li>
                             <a
-                                href="#about"
-                                className="link "
-                                onClick={() => setIsOpen(false)}
+                                href="/#about"
+                                onClick={closeMenu}
+                                className="link"
                             >
                                 ABOUT
                             </a>
@@ -51,9 +55,9 @@ export default function Navbar() {
 
                         <li>
                             <a
-                                href="#services"
+                                href="/#services"
+                                onClick={closeMenu}
                                 className="link"
-                                onClick={() => setIsOpen(false)}
                             >
                                 SERVICE
                             </a>
@@ -61,9 +65,9 @@ export default function Navbar() {
 
                         <li>
                             <a
-                                href="#team"
+                                href="/#team"
+                                onClick={closeMenu}
                                 className="link"
-                                onClick={() => setIsOpen(false)}
                             >
                                 TEAM
                             </a>
@@ -71,19 +75,24 @@ export default function Navbar() {
 
                         <li>
                             <a
-                                href="#footer"
+                                href="/#footer"
+                                onClick={closeMenu}
                                 className="link"
-                                onClick={() => setIsOpen(false)}
                             >
                                 CONTACT
                             </a>
                         </li>
 
+                        {/* Appointment (REAL ROUTE) */}
                         <li className="lg:ml-4">
-                            <button className="btn flex items-center gap-3">
+                            <Link
+                                to="/appointment"
+                                className="btn flex items-center gap-3"
+                                onClick={closeMenu}
+                            >
                                 <span>Appointment</span>
                                 <i className="fa-solid fa-arrow-right"></i>
-                            </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
