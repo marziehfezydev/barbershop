@@ -1,41 +1,31 @@
 import Button from "../components/Button";
 
 export default function Contact() {
-    return (
-        <section
-            id="contact"
-            className="bg-black py-24"
-        >
-            <div className="container mx-auto px-4">
+  return (
+    <section id="contact" className="bg-black py-24">
+      <div className="container mx-auto px-4">
+        {/* Heading */}
+        <div className="flex flex-col items-center text-center gap-4 mb-12">
+          <Button>Contact Us</Button>
 
-                {/* Heading */}
-                <div className="flex flex-col items-center text-center gap-4 mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold uppercase text-white max-w-3xl">
+            Have Any Query? Please Contact Us!
+          </h2>
 
-                    <Button>
-                        Contact Us
-                    </Button>
+          <p className="text-[#6C7293] max-w-2xl">
+            We'd love to hear from you. Whether you have a question about our
+            services, pricing, appointments, or anything else, our team is ready
+            to answer all your questions.
+          </p>
+        </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold uppercase text-white max-w-3xl">
-                        Have Any Query? Please Contact Us!
-                    </h2>
-
-                    <p className="text-[#6C7293] max-w-2xl">
-                        We'd love to hear from you. Whether you have a question
-                        about our services, pricing, appointments, or anything
-                        else, our team is ready to answer all your questions.
-                    </p>
-
-                </div>
-
-                {/* Form */}
-                <form className="max-w-5xl mx-auto">
-
-                    <div className="grid md:grid-cols-2 gap-6 mb-6">
-
-                        <input
-                            type="text"
-                            placeholder="Your Name"
-                            className="
+        {/* Form */}
+        <form className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="
                                 w-full
                                 bg-transparent
                                 border
@@ -48,12 +38,12 @@ export default function Contact() {
                                 focus:border-[#EB1616]
                                 transition
                             "
-                        />
+            />
 
-                        <input
-                            type="email"
-                            placeholder="Your Email"
-                            className="
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="
                                 w-full
                                 bg-transparent
                                 border
@@ -66,14 +56,13 @@ export default function Contact() {
                                 focus:border-[#EB1616]
                                 transition
                             "
-                        />
+            />
+          </div>
 
-                    </div>
-
-                    <input
-                        type="text"
-                        placeholder="Subject"
-                        className="
+          <input
+            type="text"
+            placeholder="Subject"
+            className="
                             w-full
                             bg-transparent
                             border
@@ -87,12 +76,12 @@ export default function Contact() {
                             transition
                             mb-6
                         "
-                    />
+          />
 
-                    <textarea
-                        rows="6"
-                        placeholder="Message"
-                        className="
+          <textarea
+            rows="6"
+            placeholder="Message"
+            className="
                             w-full
                             bg-transparent
                             border
@@ -107,11 +96,11 @@ export default function Contact() {
                             resize-none
                             mb-6
                         "
-                    />
+          />
 
-                    <button
-                        type="submit"
-                        className="
+          <button
+            type="submit"
+            className="
                             w-full
                             bg-[#EB1616]
                             hover:bg-red-700
@@ -121,13 +110,11 @@ export default function Contact() {
                             transition
                             cursor-pointer
                         "
-                    >
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
-        </section>
-    );
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
 }
